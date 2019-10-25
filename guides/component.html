@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Component | ECS Machina</title>
+    <meta name="description" content="An Entity-Component-System library">
+    
+    
+    <link rel="preload" href="/ecs-machina/assets/css/0.styles.c9c7a3a6.css" as="style"><link rel="preload" href="/ecs-machina/assets/js/app.61bd3264.js" as="script"><link rel="preload" href="/ecs-machina/assets/js/2.0c1381f6.js" as="script"><link rel="preload" href="/ecs-machina/assets/js/7.606a83d9.js" as="script"><link rel="prefetch" href="/ecs-machina/assets/js/10.07099e68.js"><link rel="prefetch" href="/ecs-machina/assets/js/11.182e6890.js"><link rel="prefetch" href="/ecs-machina/assets/js/12.313dfec9.js"><link rel="prefetch" href="/ecs-machina/assets/js/3.534f8a21.js"><link rel="prefetch" href="/ecs-machina/assets/js/4.9157cd7c.js"><link rel="prefetch" href="/ecs-machina/assets/js/5.3189ee1e.js"><link rel="prefetch" href="/ecs-machina/assets/js/6.24402567.js"><link rel="prefetch" href="/ecs-machina/assets/js/8.6d6d3c2f.js"><link rel="prefetch" href="/ecs-machina/assets/js/9.deebfd9a.js">
+    <link rel="stylesheet" href="/ecs-machina/assets/css/0.styles.c9c7a3a6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/ecs-machina/" class="home-link router-link-active"><!----> <span class="site-name">ECS Machina</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/ecs-machina/" class="nav-link">Home</a></div><div class="nav-item"><a href="/ecs-machina/guides/" class="nav-link router-link-active">Guides</a></div><div class="nav-item"><a href="https://scambier.github.io/ecs-machina/api" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  API
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/scambier/ecs-machina" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/ecs-machina/" class="nav-link">Home</a></div><div class="nav-item"><a href="/ecs-machina/guides/" class="nav-link router-link-active">Guides</a></div><div class="nav-item"><a href="https://scambier.github.io/ecs-machina/api" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  API
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/scambier/ecs-machina" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/ecs-machina/guides/installation.html" class="sidebar-link">Installation &amp; Setup</a></li><li><a href="/ecs-machina/guides/world.html" class="sidebar-link">World</a></li><li><a href="/ecs-machina/guides/entity.html" class="sidebar-link">Entity</a></li><li><a href="/ecs-machina/guides/component.html" class="active sidebar-link">Component</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ecs-machina/guides/component.html#the-type-s-role" class="sidebar-link">The _type's role</a></li><li class="sidebar-sub-header"><a href="/ecs-machina/guides/component.html#defining-a-component" class="sidebar-link">Defining a Component</a></li><li class="sidebar-sub-header"><a href="/ecs-machina/guides/component.html#create-a-component" class="sidebar-link">Create a Component</a></li></ul></li><li><a href="/ecs-machina/guides/system.html" class="sidebar-link">System</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="component"><a href="#component" aria-hidden="true" class="header-anchor">#</a> Component</h1> <p>Components are the data of your game. They are &quot;blocks&quot; of related fields, on which the Systems will act. They are simple JavaScript objects that must implement the <code>BaseComponent</code> interface. This interface makes sure that all your Components have a <code>_type</code> property.</p> <h2 id="the-type-s-role"><a href="#the-type-s-role" aria-hidden="true" class="header-anchor">#</a> The <code>_type</code>'s role</h2> <p>Components are simple JavaScript objects, which allow us to easily de/serialize them from/to JSON. But since Components are nothing more than objects (not class instances), ECS Machina uses the <code>_type</code> property to differentiate them.</p> <h2 id="defining-a-component"><a href="#defining-a-component" aria-hidden="true" class="header-anchor">#</a> Defining a Component</h2> <p>Efficiently declaring a Component can be done with those three elements:</p> <ul><li>The interface, extending <code>BaseComponent</code></li> <li>The <code>_type</code> value (a unique string)</li> <li>Optionally, a type guard function</li></ul> <p>Example:</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> BaseComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'ecs-machina'</span>
+
+<span class="token comment">/**
+ * The interface extends BaseComponent, so it implicitely has the `_type` attribute
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">BoxComponent</span> <span class="token keyword">extends</span> <span class="token class-name">BaseComponent</span> <span class="token punctuation">{</span>
+  x<span class="token punctuation">:</span> <span class="token builtin">number</span>
+  y<span class="token punctuation">:</span> <span class="token builtin">number</span>
+  width<span class="token punctuation">:</span> <span class="token builtin">number</span>
+  height<span class="token punctuation">:</span> <span class="token builtin">number</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * Take advantage of declaration merging to define the `_type` value
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> BoxComponent <span class="token operator">=</span> <span class="token string">'BoxComponent'</span>
+
+<span class="token comment">/**
+ * Type guard for BoxComponent
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">isBoxComponent</span><span class="token punctuation">(</span><span class="token parameter">cmp<span class="token punctuation">:</span> BaseComponent</span><span class="token punctuation">)</span><span class="token punctuation">:</span> cmp <span class="token keyword">is</span> BoxComponent <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> cmp<span class="token punctuation">.</span>_type <span class="token operator">===</span> BoxComponent
+<span class="token punctuation">}</span>
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>Noticed how the <code>interface</code> and the <code>const</code> both have the same name (<code>BoxComponent</code>)?</p> <p>It's a unique feature from TypeScript called &quot;<a href="https://www.typescriptlang.org/docs/handbook/declaration-merging.html" target="_blank" rel="noopener noreferrer">Declaration Merging<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>&quot;, that allows us to interchangeably use the same &quot;name&quot; as a value or a type, depending on the context.</p></div> <div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>Even though the type guard is not really required, it can be quite useful. For example:</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">const</span> componentsList<span class="token punctuation">:</span> BaseComponent<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token comment">/**/</span><span class="token punctuation">]</span>
+<span class="token keyword">const</span> component <span class="token operator">=</span> componentsList<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>isBoxComponent<span class="token punctuation">)</span>
+<span class="token comment">// component is automatically typed as `BoxComponent | undefined`</span>
+</code></pre></div></div> <h2 id="create-a-component"><a href="#create-a-component" aria-hidden="true" class="header-anchor">#</a> Create a Component</h2> <p>Since Components are simple objects, you just need to adhere to your previously declared interface.</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> BoxComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./BoxComponent'</span>
+
+<span class="token keyword">const</span> tiled<span class="token punctuation">:</span> BoxComponent <span class="token operator">=</span> <span class="token punctuation">{</span>
+  _type<span class="token punctuation">:</span> BoxComponent<span class="token punctuation">,</span>
+  x<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  y<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  width<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  height<span class="token punctuation">:</span> <span class="token number">10</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">8/15/2019, 6:57:09 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/ecs-machina/guides/entity.html" class="prev">
+          Entity
+        </a></span> <span class="next"><a href="/ecs-machina/guides/system.html">
+          System
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/ecs-machina/assets/js/app.61bd3264.js" defer></script><script src="/ecs-machina/assets/js/2.0c1381f6.js" defer></script><script src="/ecs-machina/assets/js/7.606a83d9.js" defer></script>
+  </body>
+</html>
