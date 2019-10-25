@@ -107,17 +107,12 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="entities" class="tsd-anchor"></a>
 					<h3>entities</h3>
-					<div class="tsd-signature tsd-kind-icon">entities<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<div class="tsd-signature tsd-kind-icon">entities<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#entity" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/basecomponent.html" class="tsd-signature-type">BaseComponent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Map()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/2e6d17a/src/world.ts#L11">world.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/eafb5e6/src/world.ts#L11">world.ts:11</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-						</ul>
-					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -132,7 +127,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/2e6d17a/src/world.ts#L34">world.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/eafb5e6/src/world.ts#L32">world.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -155,7 +150,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/2e6d17a/src/world.ts#L79">world.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/eafb5e6/src/world.ts#L81">world.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -177,27 +172,30 @@
 					<a name="findentitiesbycomponents" class="tsd-anchor"></a>
 					<h3>find<wbr>Entities<wbr>ByComponents</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Entities<wbr>ByComponents<span class="tsd-signature-symbol">(</span>componentTypes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#entity" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Entities<wbr>ByComponents<span class="tsd-signature-symbol">(</span>componentTypes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#entity" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/basecomponent.html" class="tsd-signature-type">BaseComponent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/2e6d17a/src/world.ts#L65">world.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/eafb5e6/src/world.ts#L65">world.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns an array of entities that own the required components</p>
+									<p>Returns a Map&lt;Entity, BaseComponent[]&gt; matching the componentTypes</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>componentTypes: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The components used to filter</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../globals.html#entity" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#entity" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/basecomponent.html" class="tsd-signature-type">BaseComponent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -211,7 +209,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/2e6d17a/src/world.ts#L169">world.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/eafb5e6/src/world.ts#L174">world.ts:174</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -223,6 +221,8 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>entity: <a href="../globals.html#entity" class="tsd-signature-type">Entity</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/basecomponent.html" class="tsd-signature-type">BaseComponent</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -239,7 +239,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/2e6d17a/src/world.ts#L58">world.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/eafb5e6/src/world.ts#L56">world.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -261,7 +261,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/2e6d17a/src/world.ts#L214">world.ts:214</a></li>
+									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/eafb5e6/src/world.ts#L219">world.ts:219</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -297,7 +297,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/2e6d17a/src/world.ts#L205">world.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/eafb5e6/src/world.ts#L210">world.ts:210</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -319,7 +319,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/2e6d17a/src/world.ts#L94">world.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/eafb5e6/src/world.ts#L96">world.ts:96</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -352,7 +352,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/2e6d17a/src/world.ts#L45">world.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/eafb5e6/src/world.ts#L43">world.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -381,7 +381,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/2e6d17a/src/world.ts#L178">world.ts:178</a></li>
+									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/eafb5e6/src/world.ts#L183">world.ts:183</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -410,7 +410,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/2e6d17a/src/world.ts#L129">world.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/eafb5e6/src/world.ts#L132">world.ts:132</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -443,7 +443,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/2e6d17a/src/world.ts#L159">world.ts:159</a></li>
+									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/eafb5e6/src/world.ts#L162">world.ts:162</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -476,7 +476,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/2e6d17a/src/world.ts#L198">world.ts:198</a></li>
+									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/eafb5e6/src/world.ts#L203">world.ts:203</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -505,7 +505,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/2e6d17a/src/world.ts#L19">world.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/scambier/ecs-machina/blob/eafb5e6/src/world.ts#L17">world.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -589,6 +589,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="../globals.html#arraycontainsarray" class="tsd-kind-icon">array<wbr>Contains<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="../globals.html#hashtomap" class="tsd-kind-icon">hash<wbr>ToMap</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="../globals.html#maptohash" class="tsd-kind-icon">map<wbr>ToHash</a>
 					</li>
 				</ul>
 			</nav>
